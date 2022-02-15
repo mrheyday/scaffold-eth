@@ -1,5 +1,5 @@
 // MY INFURA_ID, SWAP IN YOURS FROM https://infura.io/dashboard/ethereum
-export const INFURA_ID = "460f40a260564ac4a4f4b3fffb032dad";
+export const INFURA_ID = "7b0e75d38d424750b92791477924d133";
 
 // MY ETHERSCAN_ID, SWAP IN YOURS FROM https://etherscan.io/myapikey
 export const ETHERSCAN_KEY = "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW";
@@ -21,7 +21,7 @@ export const NETWORKS = {
     name: "mainnet",
     color: "#ff8b9e",
     chainId: 1,
-    rpcUrl: `https://mainnet.infura.io/v3/${INFURA_ID}`,
+    rpcUrl: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_KEY}`,
     blockExplorer: "https://etherscan.io/",
   },
   kovan: {
@@ -66,14 +66,15 @@ export const NETWORKS = {
     faucet: "https://xdai-faucet.top/",
     blockExplorer: "https://blockscout.com/poa/xdai/",
   },
-  polygon: {
-    name: "polygon",
+  matic: {
+    name: "matic",
     color: "#2bbdf7",
     chainId: 137,
     price: 1,
     gasPrice: 1000000000,
-    rpcUrl: "https://polygon-rpc.com/",
-    blockExplorer: "https://polygonscan.com/",
+    rpcUrl: "https://rpc-mainnet.maticvigil.com",
+    faucet: "https://faucet.matic.network/",
+    blockExplorer: "https://explorer-mainnet.maticvigil.com//",
   },
   mumbai: {
     name: "mumbai",
@@ -82,8 +83,8 @@ export const NETWORKS = {
     price: 1,
     gasPrice: 1000000000,
     rpcUrl: "https://rpc-mumbai.maticvigil.com",
-    faucet: "https://faucet.polygon.technology/",
-    blockExplorer: "https://mumbai.polygonscan.com/",
+    faucet: "https://faucet.matic.network/",
+    blockExplorer: "https://mumbai-explorer.matic.today/",
   },
   localArbitrum: {
     name: "localArbitrum",
@@ -183,23 +184,6 @@ export const NETWORKS = {
     blockExplorer: "https://explorer.harmony.one/",
     rpcUrl: `https://api.harmony.one`,
     gasPrice: 1000000000,
-  },
-  fantom: {
-    name: "fantom",
-    color: "#1969ff",
-    chainId: 250,
-    blockExplorer: "https://ftmscan.com/",
-    rpcUrl: `https://rpcapi.fantom.network`,
-    gasPrice: 1000000000,
-  },
-  testnetFantom: {
-    name: "testnetFantom",
-    color: "#1969ff",
-    chainId: 4002,
-    blockExplorer: "https://testnet.ftmscan.com/",
-    rpcUrl: `https://rpc.testnet.fantom.network`,
-    gasPrice: 1000000000,
-    faucet: "https://faucet.fantom.network/",
   },
 };
 

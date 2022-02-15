@@ -1,3 +1,6 @@
+import { RetweetOutlined, SettingOutlined } from "@ant-design/icons";
+import { ChainId, Fetcher, Percent, Token, TokenAmount, Trade, WETH } from "@uniswap/sdk";
+import { abi as IUniswapV2Router02ABI } from "@uniswap/v2-periphery/build/IUniswapV2Router02.json";
 import {
   Button,
   Card,
@@ -13,13 +16,9 @@ import {
   Tooltip,
   Typography,
 } from "antd";
-import React, { useEffect, useState } from "react";
-import { ethers } from "ethers";
 import { useBlockNumber, usePoller } from "eth-hooks";
-import { RetweetOutlined, SettingOutlined } from "@ant-design/icons";
-import { ChainId, Fetcher, Percent, Token, TokenAmount, Trade, WETH } from "@uniswap/sdk";
-import { abi as IUniswapV2Router02ABI } from "@uniswap/v2-periphery/build/IUniswapV2Router02.json";
-
+import { ethers } from "ethers";
+import React, { useEffect, useState } from "react";
 import { useDebounce } from "../hooks";
 
 const { Option } = Select;
